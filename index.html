@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Anurb Izquierdo — Drop 01. Wearable pieces.">
+  <title>Anurb Izquierdo — Drop 01</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='white'/%3E%3Ctext x='6' y='25' font-size='30' fill='%238496a5' font-family='serif'%3Ea%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="looks-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#pieces">Ir para os looks</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Anurb — início"><img src="midia/logo.png" alt="Anurb Izq" width="901" height="267"></a>
+    <nav aria-label="Navegação principal">
+      <div class="menu-links">
+      <a href="#drop-01">DROP 01</a>
+      <a href="#pieces">PIECES</a>
+      <span aria-disabled="true" title="Em breve">ABOUT</span>
+      <span aria-disabled="true" title="Em breve">CONTACT</span>
+      </div>
+      <div class="language-picker">
+        <button class="language-current" type="button" aria-label="Language: English" aria-expanded="false" aria-controls="language-options">EN</button>
+        <div class="language-options" id="language-options" hidden>
+          <button type="button" data-language="es" lang="es" aria-label="Español">ES</button>
+          <button type="button" data-language="pt" lang="pt" aria-label="Português">PT</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="inicio">
+    <section class="hero hero-composite" id="drop-01" aria-labelledby="collection-title">
+      <div class="hero-photo media-slot" id="hero-photo"><img src="midia/imagem%20landing.png" alt="Anurb Izquierdo — Drop 01" width="3189" height="1191" fetchpriority="high"></div>
+      <h1 id="collection-title">Anurb Izquierdo</h1>
+      <p class="collection-caption">WEARABLE PIECES</p>
+    </section>
+    <section class="collection" id="pieces" aria-label="Looks do Drop 01">
+      <div class="ornament-rail" aria-hidden="true"></div>
+      <div id="looks" class="looks" aria-live="polite"></div>
+      <p id="load-error" class="load-error" hidden>Não foi possível carregar os looks. Abra esta página pelo servidor local indicado no README.</p>
+    </section>
+  </main>
+  <noscript><p>Ative o JavaScript para visualizar os looks.</p></noscript>
+</body>
+</html>
