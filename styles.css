@@ -250,7 +250,7 @@ html.custom-cursor-active *::after { cursor: none !important; }
 
 /* Informações reais dos looks, com o ritmo editorial da referência. */
 .piece-slots { gap: 6cqw; }
-.piece-info { font-size: clamp(14px, 1.3cqw, 19px); line-height: 1.08; font-weight: 500; }
+.piece-info { font-size: clamp(14px, 1.3cqw, 19px); line-height: 1.08; font-weight: 400; }
 .piece-info h3, .piece-info p { margin: 0; font: inherit; }
 .look-info h2 { font-size: clamp(14px, 1.3cqw, 19px); }
 .model { overflow: hidden; }
@@ -265,4 +265,23 @@ html.custom-cursor-active *::after { cursor: none !important; }
   .look:nth-child(even) .look-info { padding-left: 4cqw; padding-right: 0; }
   .look > .look-number-image { right: -1cqw; opacity: .45; }
   .look:nth-child(even) > .look-number-image { right: -1cqw; }
+}
+
+/* Compensa a margem superior das fotos para alinhar o primeiro look aos anjinhos. */
+.looks { position: relative; top: -5cqw; }
+@media (max-width: 600px) {
+  .looks { top: -7cqw; }
+}
+
+/* Mais respiro nos looks à esquerda, mantendo os textos na mesma coluna. */
+.look:nth-child(even) .look-info { transform: translateX(-1cqw); }
+.look:nth-child(even) .model { transform: translateX(-3cqw); }
+.look:nth-child(even) > .look-number { transform: translateX(-3cqw); }
+.look-info h2 {
+  width: fit-content;
+  font-weight: 550;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  line-height: 1.15;
 }
